@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBURUNModelStoreContainer" CdmEntityContainer="DBURUNEntities">
+    <EntitySetMapping Name="Kategori">
+      <EntityTypeMapping TypeName="DBURUNModel.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="katId" ColumnName="katId" />
+          <ScalarProperty Name="katAdi" ColumnName="katAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kayit">
+      <EntityTypeMapping TypeName="DBURUNModel.Kayit">
+        <MappingFragment StoreEntitySet="Kayit">
+          <ScalarProperty Name="kayitId" ColumnName="kayitId" />
+          <ScalarProperty Name="kayitUrunId" ColumnName="kayitUrunId" />
+          <ScalarProperty Name="kayitKategoriId" ColumnName="kayitKategoriId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="DBURUNModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="userAdi" ColumnName="userAdi" />
+          <ScalarProperty Name="userMail" ColumnName="userMail" />
+          <ScalarProperty Name="userSifre" ColumnName="userSifre" />
+          <ScalarProperty Name="userAdmin" ColumnName="userAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urun">
+      <EntityTypeMapping TypeName="DBURUNModel.Urun">
+        <MappingFragment StoreEntitySet="Urun">
+          <ScalarProperty Name="urunId" ColumnName="urunId" />
+          <ScalarProperty Name="urunAdi" ColumnName="urunAdi" />
+          <ScalarProperty Name="urunBilgi" ColumnName="urunBilgi" />
+          <ScalarProperty Name="urunFiyat" ColumnName="urunFiyat" />
+          <ScalarProperty Name="urunKat" ColumnName="urunKat" />
+          <ScalarProperty Name="urunYorum" ColumnName="urunYorum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
